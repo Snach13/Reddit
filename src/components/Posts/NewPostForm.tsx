@@ -59,7 +59,7 @@ const formTabs = [
   },
 ];
 
-export type TabItem = {
+export type TabItems = {
   title: string;
   icon: typeof Icon.arguments;
 };
@@ -90,6 +90,7 @@ const NewPostForm: React.FC<NewPostProps> = ({ user, communityImageURL }) => {
       numberOfComments: 0,
       voteStatus: 0,
       createdAt: serverTimestamp() as Timestamp,
+      id: "",
     };
     setLoading(true);
     // store the post in db
