@@ -12,13 +12,6 @@ const firebaseConfig = {
   storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
   messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
   appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
-
-  // apiKey: "AIzaSyAanFI0Val5mAqzqPOfDFImWqDbnI_78JM",
-  // authDomain: "reddit-e0757.firebaseapp.com",
-  // projectId: "reddit-e0757",
-  // storageBucket: "reddit-e0757.appspot.com",
-  // messagingSenderId: "1003639679059",
-  // appId: "1:1003639679059:web:a3cfbbdeebe08e3d1bbea6",
 };
 
 // Initialize Firebase for SSR
