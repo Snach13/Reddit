@@ -40,6 +40,7 @@ const PostPage = () => {
     if (pid && !postStateValue.selectedPost) {
       fetchPost(pid as string);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [router.query, postStateValue.selectedPost]);
 
   return (

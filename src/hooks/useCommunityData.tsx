@@ -169,6 +169,7 @@ const useCommunityData = () => {
       return;
     }
     getMySnippets();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user]);
 
   useEffect(() => {
@@ -177,6 +178,7 @@ const useCommunityData = () => {
     if (communityId && !communityStateValue.currentCommunity) {
       getCommunityData(communityId as string);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [router.query, communityStateValue.currentCommunity]);
 
   return {

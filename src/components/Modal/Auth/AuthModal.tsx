@@ -31,6 +31,7 @@ const AuthModal = () => {
 
   useEffect(() => {
     if (user) handleClose();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user]);
 
   return (

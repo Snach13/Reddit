@@ -121,10 +121,12 @@ const Home: NextPage = () => {
   // useEffects
   useEffect(() => {
     if (communityStateValue.snippetFetched) buildUserHomeFeed();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [communityStateValue.snippetFetched]);
 
   useEffect(() => {
     if (!user && !loadingUser) buildNoUserHomeFeed();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user, loadingUser]);
 
   useEffect(() => {
@@ -136,6 +138,7 @@ const Home: NextPage = () => {
         postVotes: [],
       }));
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user, postStateValue.posts]);
 
   return (
